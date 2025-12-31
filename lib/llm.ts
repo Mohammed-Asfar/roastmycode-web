@@ -72,7 +72,7 @@ export async function roastCode(
 
   // Initialize the model
   const model = new ChatGoogleGenerativeAI({
-    model: "gemini-2.0-flash-exp",
+    model: "gemini-2.5-flash",
     apiKey,
     temperature: 0.8, // Higher for more creative responses
   });
