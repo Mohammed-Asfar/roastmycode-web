@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href="https://github.com"
+            href="https://github.com/Mohammed-Asfar/roastmycode-web"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-zinc-400 hover:text-white transition-colors"

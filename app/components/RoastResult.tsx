@@ -1,6 +1,7 @@
 "use client";
 
 import { ThumbsUp, Flame, Wrench } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 import type { RoastResponse } from "@/lib/llm";
 
 interface RoastResultProps {
@@ -92,7 +93,9 @@ export function RoastResult({ result, isLoading }: RoastResultProps) {
                             </div>
                             <h3 className="font-bold text-zinc-200">{card.title}</h3>
                         </div>
-                        <p className="text-zinc-300 leading-relaxed">{card.content}</p>
+                        <div className="text-zinc-300 leading-relaxed prose prose-invert prose-sm max-w-none prose-p:my-1 prose-code:bg-zinc-700 prose-code:px-1 prose-code:rounded">
+                            <ReactMarkdown>{card.content}</ReactMarkdown>
+                        </div>
                     </div>
                 ))}
             </div>
